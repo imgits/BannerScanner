@@ -11,6 +11,7 @@ struct ScanItem
 class BannerScanner
 {
 	ScanItem* scan_item_list;
+	int scan_item_count;
 public:
 	BannerScanner();
 	~BannerScanner();
