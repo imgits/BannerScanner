@@ -1,11 +1,17 @@
-// BannerScanner.cpp : 定义控制台应用程序的入口点。
-//
-
 #include "stdafx.h"
+#include "BannerScanner.h"
 
 
-int main()
+BannerScanner::BannerScanner()
 {
-    return 0;
 }
 
+BannerScanner::~BannerScanner()
+{
+}
+
+bool BannerScanner::LoadScanItems(char* filename)
+{
+	FILE *fp = NULL;
+	fopen_s(&fp, filename, "rt");
+}
