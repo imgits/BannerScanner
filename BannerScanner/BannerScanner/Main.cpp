@@ -5,7 +5,7 @@
 #include "BannerScanner.h"
 extern "C"
 {
-#include <curl.h>
+//#include <curl.h>
 }
 int Help()
 {
@@ -16,15 +16,15 @@ int Help()
 int main(int argc, char** argv)
 {
 			// global libcurl initialisation
-	CURLcode ccCurlResult = curl_global_init(CURL_GLOBAL_WIN32);
-	if (ccCurlResult == 0)
-	{
-		// start l		ibcurl easy session
-		CURL* hCurl = curl_easy_init();
-		if (hCurl)
-		{
-		}
-	}
+	//CURLcode ccCurlResult = curl_global_init(CURL_GLOBAL_WIN32);
+	//if (ccCurlResult == 0)
+	//{
+	//	// start l		ibcurl easy session
+	//	CURL* hCurl = curl_easy_init();
+	//	if (hCurl)
+	//	{
+	//	}
+	//}
 
 	BannerScanner scanner;
 	scanner.LoadScanItems(argv[1]);
